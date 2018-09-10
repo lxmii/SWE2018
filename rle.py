@@ -13,6 +13,27 @@ def rle_encoder(txt):
     for x in txt[1:]:
         if x == c:
             i += 1
-        else:
+        else: 
             res.append(f'{c}{i}')
+            c=x
+            i=1
+    res.append(f'{c}{i}')
+            
+    return ''.join(res)
+
+def rle_decoder(txt):
+    # 'l'*3 ->'lll'
+    
+    c = txt[0]
+    res = []
+    for x in txt[1:]:
+        if  x.isdigit():
+            res.append(c*int (x))
+            
+        else:
+            
+            c=x
+            
+    
+            
     return ''.join(res)
