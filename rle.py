@@ -1,6 +1,5 @@
 
-import sys
-sys.argv[1:]
+
 def rle_encoder(txt):
     """ RLE encoder modetager en streng og returner en streng
         med så gentagne bogstaver bilver erstattet med bogstavet og
@@ -36,6 +35,7 @@ def rle_decoder(txt):
     return ''.join(res)
 
 if __name__=="__main__":
+	import sys
     args= sys.argv
     print(args)
     if argv[1]=='-d':
