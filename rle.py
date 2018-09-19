@@ -31,18 +31,13 @@ def rle_decoder(txt):
             res.append(c*int (x))
             
         else:
-            
-            c=x
-            
-    
-            
+            c=x        
     return ''.join(res)
 
-if name=="__main__":
+if __name__=="__main__":
     args= sys.argv
     print(args)
     if argv[1]=='-d':
         rle_decoder(args[2])
     else:
         rle_encoder(args[2])
-    

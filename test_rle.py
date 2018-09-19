@@ -1,7 +1,6 @@
 from rle import rle_encoder,rle_decoder
 import sys
-import afl
-afl.init()
+
 if __name__=="__main__":
     print(rle_encoder(sys.stdin.read()))
 

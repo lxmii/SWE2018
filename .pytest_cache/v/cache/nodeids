@@ -1,1 +1,6 @@
-[]
+[
+  "test_rle.py::test_simple",
+  "test_rle.py::test_advanced",
+  "test_rle.py::test_moreadvanced",
+  "test_rle.py::test_dec"
+]
