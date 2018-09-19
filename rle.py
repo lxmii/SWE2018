@@ -37,3 +37,12 @@ def rle_decoder(txt):
     
             
     return ''.join(res)
+
+if name=="__main__":
+    args= sys.argv
+    print(args)
+    if argv[1]=='-d':
+        rle_decoder(args[2])
+    else:
+        rle_encoder(args[2])
+    
