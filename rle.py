@@ -1,5 +1,6 @@
 
 import sys
+sys.argv[1:]
 def rle_encoder(txt):
     """ RLE encoder modetager en streng og returner en streng
         med så gentagne bogstaver bilver erstattet med bogstavet og
